@@ -11,5 +11,5 @@ The protoc binary file was donwloaded from github.com/google/protobuf releases
 This generates addressbook.pb.go in your specified destination directory.
 
 Run
-go run add_person.go myBook
+go run add_person.go myBook \n
 go run list_people.go myBook
