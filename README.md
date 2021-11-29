@@ -1,15 +1,27 @@
 # grpc-address-book-example-go
-Following the tutorial: https://developers.google.com/protocol-buffers/docs/gotutorial
 
-Examples files https://github.com/google/protobuf/tree/master/examples
+Following the tutorial:
+https://developers.google.com/protocol-buffers/docs/gotutorial
 
-To generate addressbook.pb.go file
+Examples files
+https://github.com/google/protobuf/tree/master/examples
 
-The protoc binary file was donwloaded from github.com/google/protobuf releases
+To generate **addressbook.pb.go** file
 
-./protoc --go_out=plugins=grpc:. addressbook.proto
+The protoc binary file was donwloaded from [github.com/google/protobuf](https://github.com/google/protobuf/releases) releases
+
+```
+./protoc --gogo_out=. addressbook.proto
+```
+
 This generates addressbook.pb.go in your specified destination directory.
 
-Run
-go run add_person.go myBook \n
+### Run
+
+```
+go run add_person.go myBook
+```
+
+```
 go run list_people.go myBook
+```
